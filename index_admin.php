@@ -13,7 +13,7 @@ $data = mysqli_query($koneksi, $query);
 </head>
 <body>
     <h3>Daftar Anggota</h3>
-    <a href="add.php">Tambah Data</a>
+    <a href="admin/add.php">Tambah Data</a>
 
     <table border="1px">
     <tr>
@@ -29,7 +29,7 @@ $data = mysqli_query($koneksi, $query);
         <td><?php echo $row['description'] ;?></td>
         <td><?php echo $row['nama_kategori'] ;?></td>
         <td>
-            <a href="admin/edit2.php?id=<?php echo $row['id_news']; ?>">Edit</a> | 
+            <a href="admin/edit.php?id_news=<?php echo $row['id_news']; ?>">Edit</a> | 
             <a href="#">Hapus</a>
         </td>
     </tr>
